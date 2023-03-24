@@ -35,13 +35,6 @@ const slideItems = [
     name: 'Animal Box Jewellery Box',
     description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     price: 79
-  },
-  {
-    id: 6,
-    imageUrl: 'https://demo.uix.store/sober-furniture/wp-content/uploads/sites/3/2017/06/1-4.jpg',
-    name: 'Bottle Grinders Set',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    price: 149
   }
 ]
 

@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react'
 import SlideItem from './SlideItem'
 
 function HorizontalSlideShow({ data }) {
-    const [choosenId] = useState(Math.ceil(data.length / 2) || 0)
+    const [choosenId] = useState(Math.ceil(data.length / 2) || 1)
     const [currentId, setCurrentId] = useState(choosenId)
 
     const handleSelect = useCallback((id) => {
