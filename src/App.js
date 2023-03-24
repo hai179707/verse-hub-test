@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import HorizontalSlideShow from "./components/HorizontalSlideShow"
+
+const slideItems = [
+  {
+    id: 1,
+    imageUrl: 'https://demo.uix.store/sober-furniture/wp-content/uploads/sites/3/2017/06/3-7.jpg',
+    name: 'Iron kettle nambu tekki',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    price: 154
+  },
+  {
+    id: 2,
+    imageUrl: 'https://demo.uix.store/sober-furniture/wp-content/uploads/sites/3/2017/06/1-6.jpg',
+    name: 'Freakish clock',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    price: 105
+  },
+  {
+    id: 3,
+    imageUrl: 'https://demo.uix.store/sober-furniture/wp-content/uploads/sites/3/2017/06/1-12.jpg',
+    name: 'Odin Chair',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    price: 420
+  },
+  {
+    id: 4,
+    imageUrl: 'https://demo.uix.store/sober-furniture/wp-content/uploads/sites/3/2017/06/1-1.jpg',
+    name: 'Ambit Pendant Lamp',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    price: 190
+  },
+  {
+    id: 5,
+    imageUrl: 'https://demo.uix.store/sober-furniture/wp-content/uploads/sites/3/2017/06/1-2.jpg',
+    name: 'Animal Box Jewellery Box',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    price: 79
+  },
+  {
+    id: 6,
+    imageUrl: 'https://demo.uix.store/sober-furniture/wp-content/uploads/sites/3/2017/06/1-4.jpg',
+    name: 'Bottle Grinders Set',
+    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    price: 149
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-screen h-screen flex justify-center mt-20 overflow-hidden">
+      <HorizontalSlideShow data={slideItems} />
     </div>
   );
 }
 
-export default App;
+export default App
