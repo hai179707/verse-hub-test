@@ -47,7 +47,7 @@ const slideItems = [
 
 function App() {
   return (
-    <div className="w-screen h-screen flex justify-center mt-20 overflow-hidden">
+    <div className="w-screen h-screen flex justify-center pt-20 overflow-hidden">
       <HorizontalSlideShow data={slideItems} />
     </div>
   );
